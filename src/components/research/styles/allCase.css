@@ -1,0 +1,38 @@
+.area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.area-head {
+    width: 100%;
+    color: var(--secondary-color);
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	font-weight: 700;
+	
+}
+
+.all-cases-container {
+    display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+	align-items: stretch;
+}
+
+.all-cases-case {
+    width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 20px;
+	opacity: 0.8;
+
+}
+
+.all-cases-case:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}

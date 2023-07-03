@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+.ub-list {
+    width: 50%
+}
+
+.ub-icon {
+    text-align: right;
+    width: 50%;
+}
+
+.ub-icon img {
+    width: 25%;
+}

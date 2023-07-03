@@ -1,0 +1,49 @@
+@import "../../../data/styles.css";
+
+.homepage-new {
+	width: 90%;
+	mix-blend-mode: normal;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.homepage-new-content {
+	margin-left: 40px;
+	padding-left: 20px;
+	border-left: 1px dashed #65656d;
+}
+
+.homepage-new-icon {
+	width: 20px;
+}
+
+.homepage-new-icon img {
+	width: 100%;
+}
+
+.homepage-new-date {
+    padding-left: 50px;
+    display: flex;
+	opacity: 1;
+	color: var(--primary-color);
+	font-size: 16px;
+	margin-bottom: 1em;
+	font-weight: 700;
+}
+
+.homepage-new-description {
+    padding-left: 50px;
+	opacity: 1;
+	color: var(--secondary-color);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+	.homepage-new {
+		width: 100%;
+	}
+}

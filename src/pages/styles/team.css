@@ -1,0 +1,51 @@
+.team-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.team-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+}
+
+.team-main-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 100px;
+}
+
+.team-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.team-wrapper {
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.team-img {
+	width: 100%;
+    padding-top: 20px;
+}
+
+.team-img img {
+	width: 100%;
+}
+
+.team-head {
+    width: 100%;
+    color: var(--secondary-color);
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	font-weight: 700;
+    padding-top: 40px;
+}

@@ -1,0 +1,86 @@
+@import "../../../data/styles.css";
+
+.publication {
+	display: flex;
+}
+
+.publication a {
+	text-decoration: none;
+}
+
+.publication-left-side {
+	min-width: 15%;
+	max-width: 20%;
+}
+
+.publication-right-side {
+	background: #fafafa;
+	flex-basis: 70%;
+	min-width: 700px;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+	padding: 30px;
+	opacity: 1;
+}
+
+/* .publication-right-side:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+} */
+
+.publication-date {
+	padding-top: 30px;
+	font-size: 22px;
+	font-weight: 800;
+	color: var(--link-color);
+}
+
+.publication-title {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.publication-description {
+	padding-top: 10px;
+	font-size: 16px;
+	color: purple;
+	font-weight: 600;
+	line-height: 25px;
+}
+
+
+.publication-author {
+	padding-top: 10px;
+	font-size: 16px;
+	color: var(--secondary-color);
+	font-weight: 480;
+	line-height: 25px;
+}
+
+.publication-link {
+	padding-top: 10px;
+	font-size: 14px;
+	color: purple;
+	font-weight: 700;
+}
+
+.publication-icon {
+	display: flex;
+	flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+	.publication-left-side {
+		min-width: 10%;
+		max-width: 10%;
+	}
+
+	.publication-right-side {
+		flex-basis: 90%;
+		min-width: 85%;
+		max-width: 85%;
+	}
+}
