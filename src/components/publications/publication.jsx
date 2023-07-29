@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { GithubOutlined, FilePdfOutlined, FundProjectionScreenOutlined } from '@ant-design/icons';
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import "./style/publication.css";
@@ -24,8 +24,9 @@ const Publication = (props) => {
 					<Link to={code_link}><GithubOutlined style={{ fontSize: '16px', color: '#27272a'}}/></Link>
 					{" "}
 					<Link to={paper_link}><FilePdfOutlined style={{ fontSize: '16px', color: '#27272a'}}/></Link>
+					{" "}
+					<Link to={paper_link}><FundProjectionScreenOutlined style={{ fontSize: '16px', color: '#27272a'}}/></Link>
 					</div>
-					
 				</div>
 			</div>
 		</React.Fragment>

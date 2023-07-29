@@ -11,6 +11,7 @@ import SEO from "../data/seo";
 import PublicationsINFO from "../data/publications";
 
 import "./styles/publications.css";
+import Toolbox from "../components/publications/toolbox";
 
 const Publications = () => {
 	useEffect(() => {
@@ -74,6 +75,7 @@ const Publications = () => {
 									</div>
 								))}
 							</div>
+							<Toolbox />
 						</div>
 					</div>
 					<div className="page-footer">

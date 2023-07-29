@@ -8,7 +8,7 @@ import Team from "./pages/team";
 import Projects from "./pages/projects";
 import Research from "./pages/research";
 import Publications from "./pages/publications";
-import Contact from "./pages/contact";
+import Bio from "./pages/bio";
 import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
@@ -28,7 +28,7 @@ function App() {
 				<Route path="/team" element={<Team />} />
 				<Route path="/research" element={<Research />} />
 				<Route path="/publications" element={<Publications />} />
-				<Route path="/contact" element={<Contact />} />
+				<Route path="/bio" element={<Bio />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

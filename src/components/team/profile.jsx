@@ -14,7 +14,7 @@ const Profile = (props) => {
             <Link src={link}>
                 <div className="profile-container">
                     <div className="profile-img">
-                        <Avatar size={80} src={<img src={profile} alt="avatar" />} />
+                        <Avatar size={100} src={<img src={profile} alt="avatar" />} />
                     </div>
                     <div className="profile-name">
                         {name}
