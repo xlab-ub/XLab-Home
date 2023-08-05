@@ -18,7 +18,8 @@
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
-	padding-top: 100px;
+	width: 100%;
+	padding-top: 20px;
 }
 
 .team-container {
@@ -30,6 +31,10 @@
 	padding-left: 50px;
 	display: flex;
 	flex-direction: column;
+}
+
+.team-title {
+	width: 100% !important;
 }
 
 .team-img {

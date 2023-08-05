@@ -41,7 +41,7 @@ const Team = () => {
 
 					<div className="team-main-container">
 						<div className="title team-title">
-                            {INFO.homepage.title}
+							XLab: Curiosity-driven AI Systems Research
 						</div>
 
 						<div className="team-img">

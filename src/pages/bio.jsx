@@ -1,73 +1,32 @@
-import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
+import Markdown from 'markdown-to-jsx';
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import AllProfiles from "../components/team/allProfile";
-
-import INFO from "../data/user";
-import SEO from "../data/seo";
-import TeamINFO from "../data/team";
-
-import "./styles/bio.css";
+import Side from '../components/common/side';
 
 const Bio = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+  const [markdown, setMarkdown] = useState('');
 
-	const currentSEO = SEO.find((item) => item.page === "team");
+  useEffect(() => {
+    import('../data/about.md')
+      .then((res) => {
+        fetch(res.default)
+          .then((r) => r.text())
+          .then(setMarkdown);
+      });
+  });
 
-	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`Bio | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
-
-			<div className="page-content">
-				<NavBar active="team" />
-				<div className="content-wrapper">
-					<div className="team-logo-container">
-						<div className="team-logo">
-							<Logo width={50} />
-						</div>
-					</div>
-
-					<div className="team-main-container">
-						<div className="title team-title">
-                            {INFO.homepage.title}
-						</div>
-
-						<div className="team-img">
-							<img
-								src="publications.jpg"
-								alt="about"
-							/>
-						</div>
-
-                        <div className="team-head">
-                            Phd Students
-                        </div>
-						
-						<div className="team-container">
-							<div className="team-wrapper">
-                                <AllProfiles />
-							</div>
-						</div>
-					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
-			</div>
-		</React.Fragment>
-	);
+  return (
+    <Side
+      title="About"
+    >
+      <article className="post markdown" id="about">
+        <Markdown>
+          {markdown}
+        </Markdown>
+      </article>
+    </Side>
+  );
 };
 
 export default Bio;

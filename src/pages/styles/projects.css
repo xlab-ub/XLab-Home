@@ -19,7 +19,7 @@
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
-	padding-top: 120px;
+	padding-top: 10px;
 }
 
 @media (max-width: 600px) {
