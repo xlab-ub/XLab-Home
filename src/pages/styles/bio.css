@@ -1,28 +1,50 @@
+a {
+    text-decoration: none;
+}
+
 .bio-logo-container {
 	display: flex;
 	justify-content: left;
-	padding-top: 25px;
+	padding-top: 20px;
+	z-index: 999;
 }
 
 .bio-logo {
+    width: 80px;
 	display: flex;
 	position: fixed;
 	border: 1px solid white;
 	border-radius: 50%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+	top: 3vh;
+	z-index: 999;
 }
 
-.bio-main-container {
+.bio-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	margin: 0;
-	padding-top: 100px;
+    padding-top: 20px;
 }
 
-.bio-header {
-	height: 80px;
-	text-align: center;
+.bio-content-wrapper {
+	
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
+.bio-page-footer {
+	max-width: 60%;
+	margin: 0 auto;
+	padding: 0 auto;
+	position: block;
+}
+
+.bio-page-footer::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-top: 2px solid var(--tertiary-color);
+}

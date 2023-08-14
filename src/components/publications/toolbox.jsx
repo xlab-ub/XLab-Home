@@ -1,6 +1,6 @@
 import React from "react";
 import { BlockOutlined, FilterOutlined, BarChartOutlined, ToTopOutlined } from '@ant-design/icons';
-import { FloatButton, Switch } from 'antd';
+import { FloatButton } from 'antd';
 import { useState } from 'react';
 
 const Toolbox = () => {

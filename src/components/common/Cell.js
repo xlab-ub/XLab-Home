@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import dayjs from 'dayjs';
+import { GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
 
 const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
-      <header>
-        <h3><a href={data.link}>Object Detection</a></h3>
-        <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
-      </header>
-      <a href={data.link} className="image">
-        <img src='OPEN_catdetector.jpg' />
-      </a>
-      <div className="description">
-        <p>Project Introduction</p>
-      </div>
+    <header>
+    <h1><a href={data.web}>{data.title}</a> <Link to={data.code}><GithubOutlined style={{ fontSize: '24px', color: '#005BBB'}}/></Link>{" "}
+		<Link to={data.paper}><FilePdfOutlined style={{ fontSize: '24px', color: '#005BBB'}}/></Link>{" "}</h1>
+    </header>
+    <a href={data.web} className="image">
+        <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
+    </a>
+    <div className="description">
+        <p>{data.desc}</p>
+    </div>
     </article>
   </div>
 );

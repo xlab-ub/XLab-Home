@@ -1,5 +1,3 @@
-import React from "react";
-
 const ResearchINFO = {
     main: {
         title: "Accelerating AI Systems and Solutions Holistically.",

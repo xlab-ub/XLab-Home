@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubOutlined, FilePdfOutlined, FundProjectionScreenOutlined } from '@ant-design/icons';
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 import "./style/publication.css";
 

@@ -36,7 +36,7 @@ const Publications = () => {
 				<div className="content-wrapper">
 					<div className="publications-logo-container">
 						<div className="publications-logo">
-							<Logo width={50} />
+							<Logo width={80} />
 						</div>
 					</div>
 

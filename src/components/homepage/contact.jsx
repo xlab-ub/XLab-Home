@@ -2,9 +2,7 @@ import React from "react";
 
 import "./styles/contact.css";
 
-const Contact = (props) => {
-	const { active } = props;
-
+const Contact = () => {
 	return (
 		<React.Fragment>
             <div className="ub-list">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect } from "react";
 import { Anchor, Col, Row } from 'antd';
 import { Helmet } from "react-helmet";
 
@@ -36,7 +36,7 @@ const Research = () => {
 				<div className="content-wrapper">
 					<div className="research-logo-container">
 						<div className="research-logo">
-							<Logo width={50} />
+							<Logo width={80} />
 						</div>
 					</div>
 

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
@@ -8,7 +10,8 @@ import Team from "./pages/team";
 import Research from "./pages/research";
 import Publications from "./pages/publications";
 import Bio from "./pages/bio";
-import Notfound from "./pages/404";
+import Opensource from "./pages/opensource";
+import Events from "./pages/events";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -26,10 +29,11 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/bio" element={<Bio />} />
+				<Route path="/events" element={<Events />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/research" element={<Research />} />
 				<Route path="/publications" element={<Publications />} />
-				<Route path="*" element={<Notfound />} />
+				<Route path="/opensource" element={<Opensource />} />
 			</Routes>
 		</div>
 	);

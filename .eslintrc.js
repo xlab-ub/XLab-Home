@@ -31,6 +31,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "no-unused-expressions": 0
+        "no-unused-expressions": 0,
+        "react/prop-types": "off",
     }
 }

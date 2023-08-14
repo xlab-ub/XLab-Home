@@ -8,7 +8,6 @@ import AllProfiles from "../components/team/allProfile";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import TeamINFO from "../data/team";
 
 import "./styles/team.css";
 
@@ -35,13 +34,13 @@ const Team = () => {
 				<div className="content-wrapper">
 					<div className="team-logo-container">
 						<div className="team-logo">
-							<Logo width={50} />
+							<Logo width={80} />
 						</div>
 					</div>
 
 					<div className="team-main-container">
 						<div className="title team-title">
-							XLab: Curiosity-driven AI Systems Research
+							Curiosity-driven AI Systems Research.
 						</div>
 
 						<div className="team-img">

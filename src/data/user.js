@@ -5,7 +5,7 @@ const INFO = {
 		title: "XLab-UB",
 		name: "Tharindu N.",
 		email: "jinjun@buffalo.edu",
-		logo: "../logo.png",
+		logo: "xlab.png",
 	},
 
 	socials: {
@@ -40,7 +40,7 @@ const INFO = {
 	},
 
 	publications: {
-		title: "Publication: Make Every Work Count.",
+		title: "Make Every Work Count.",
 		description:
 			"Chronological collection of publications.",
 	},

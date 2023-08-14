@@ -12,6 +12,12 @@ const SEO = [
 	},
 
 	{
+		page: "news",
+		description: "XLab@UB",
+		keywords: ["xlab-ub", "Jinjun Xiong"],
+	},
+
+	{
 		page: "publications",
 		description: "XLab@UB",
 		keywords: ["xlab-ub", "Jinjun Xiong"],
@@ -25,6 +31,18 @@ const SEO = [
 
 	{
 		page: "team",
+		description: "XLab@UB",
+		keywords: ["xlab-ub", "Jinjun Xiong"],
+	},
+
+	{
+		page: "opensource",
+		description: "XLab@UB",
+		keywords: ["xlab-ub", "Jinjun Xiong"],
+	},
+
+	{
+		page: "events",
 		description: "XLab@UB",
 		keywords: ["xlab-ub", "Jinjun Xiong"],
 	},
