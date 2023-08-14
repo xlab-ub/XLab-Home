@@ -20,17 +20,22 @@ a {
 	z-index: 999;
 }
 
-.events-container {
+.switch-container {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 }
 
+.events-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}
+
 .events-switch {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	color: '#364d79',
+	
 }
 .events-switch-img {
 	width: 100%;
@@ -44,6 +49,12 @@ a {
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.events-container h4 {
+	text-transform: capitalize;
+	font-family: "Roboto", sans-serif;
+	text-align: left;
 }
 
 .events-switch img {

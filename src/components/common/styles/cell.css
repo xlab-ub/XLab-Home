@@ -1,0 +1,5 @@
+.cell-container h4 {
+    text-transform: capitalize;
+	font-size: 28px;
+    font-weight: 600;
+}

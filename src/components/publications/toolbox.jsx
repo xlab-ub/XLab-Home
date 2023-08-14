@@ -4,10 +4,7 @@ import { FloatButton } from 'antd';
 import { useState } from 'react';
 
 const Toolbox = () => {
-    const [open, setOpen] = useState(true);
-    const onChange = (checked) => {
-      setOpen(checked);
-    };
+    const [open] = useState(true);
     return (
       <div>
         <FloatButton.Group

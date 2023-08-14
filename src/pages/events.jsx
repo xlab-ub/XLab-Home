@@ -8,7 +8,7 @@ import { Carousel } from 'antd';
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import allevents from "../components/events/eventslist";
+import AllEvents from "../components/events/eventslist";
 
 import SEO from "../data/seo";
 import INFO from "../data/user";
@@ -77,10 +77,16 @@ const Events = () => {
 						</div>
 					</div>
 
-					<div className="events-container">
+					<div className="switch-container">
                         <AllSwitches />
-                        <allevents />
                     </div>
+                    <hr />
+                    <div className="events-container">
+                        
+                        {/* <DownOutlined style={{ fontSize: '32px', color: '#005BBB'}}/> */}
+                        <AllEvents />
+                    </div>
+                    
                     <div className="page-footer">
 						<Footer />
 					</div>

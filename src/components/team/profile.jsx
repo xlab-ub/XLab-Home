@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { Avatar, Space } from 'antd';
+import { Avatar } from 'antd';
 
 import "./styles/profile.css";
 

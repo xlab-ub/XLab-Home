@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
-import Cell from '../components/common/Cell';
+import Cell from "../components/common/cell";
 import ProjectINFO from '../data/opensource';
 import SEO from "../data/seo";
 import INFO from "../data/user";
