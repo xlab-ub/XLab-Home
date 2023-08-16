@@ -1,0 +1,8 @@
+.blog-cover {
+    height: 300px;
+}
+.blog-desc {
+    margin-top: 0;
+    text-indent: 1cm;
+    text-align: justify;
+}

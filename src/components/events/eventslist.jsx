@@ -1,6 +1,6 @@
-// import { ExpandOutlined } from '@ant-design/icons';
 import React from 'react';
 import { List } from 'antd';
+import { LinkOutlined } from '@ant-design/icons';
 
 import EventsINFO from '../../data/events';
 import "./styles/eventslist.css";
@@ -45,10 +45,12 @@ const AllEvents = () => (
         }
       >
         <List.Item.Meta
-          title={item.title}
+          title={<p><a href={item.href}><LinkOutlined style={{ fontSize: '18px', color: '#005BBB'}}/>{" "}</a>{item.title}</p>}
           description={item.date}
         />
-        {item.desc}
+        <div className='event-cell'>
+          {item.desc}
+        </div>
       </List.Item>
     )}
   />

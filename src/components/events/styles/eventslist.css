@@ -1,3 +1,7 @@
 .events-footer {
     margin-top: 20px;
 }
+
+.event-cell {
+    text-align: justify;
+}

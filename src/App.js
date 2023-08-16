@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import ReactGA from "react-ga4";
 
 import Homepage from "./pages/homepage";
 import Team from "./pages/team";
@@ -12,23 +10,19 @@ import Publications from "./pages/publications";
 import Bio from "./pages/bio";
 import Opensource from "./pages/opensource";
 import Events from "./pages/events";
+import Blog from "./pages/blog";
 
-import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import './static/css/main.scss'
 
 function App() {
-	useEffect(() => {
-		if (TRACKING_ID !== "") {
-			ReactGA.initialize(TRACKING_ID);
-		}
-	}, []);
 
 	return (
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/bio" element={<Bio />} />
+				<Route path="/blog" element={<Blog />} />
 				<Route path="/events" element={<Events />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/research" element={<Research />} />

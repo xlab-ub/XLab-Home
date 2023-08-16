@@ -46,6 +46,11 @@ const SEO = [
 		description: "XLab@UB",
 		keywords: ["xlab-ub", "Jinjun Xiong"],
 	},
+	{
+		page: "blog",
+		description: "XLab@UB",
+		keywords: ["xlab-ub", "Jinjun Xiong"],
+	},
 ];
 
 export default SEO;
