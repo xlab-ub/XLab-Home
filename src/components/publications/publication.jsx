@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GithubOutlined, FilePdfOutlined, FundProjectionScreenOutlined } from '@ant-design/icons';
 
-import "./style/publication.css";
+import "./styles/publication.css";
 
 const Publication = (props) => {
-	const { date, conf, title, author, paper_link, code_link } = props;
+	const { date, source, title, author, paper_link, code_link } = props;
 
 	return (
 		<React.Fragment>
@@ -15,7 +15,7 @@ const Publication = (props) => {
 				</div>
 
 				<div className="publication-right-side">
-					<div className="publication-title">{conf}</div>
+					<div className="publication-title">{source}</div>
 					<div className="publication-description">{title}</div>
 					<div className="publication-author">{author}</div>
 					<div className="publication-link">

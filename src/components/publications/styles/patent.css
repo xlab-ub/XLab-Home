@@ -1,0 +1,86 @@
+@import "../../../data/styles.css";
+
+.patent {
+	display: flex;
+}
+
+.patent a {
+	text-decoration: none;
+}
+
+.patent-left-side {
+	min-width: 15%;
+	max-width: 15%;
+}
+
+.patent-right-side {
+	background: #fafafa;
+	flex-basis: 60%;
+	min-width: 80%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+	padding: 10px 30px 10px 30px;
+	opacity: 1;
+}
+
+/* .patent-right-side:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+} */
+
+.patent-date {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 800;
+	color: var(--link-color);
+}
+
+.patent-title {
+	color: purple;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.patent-description {
+	padding-top: 5px;
+	font-size: 16px;
+	color: var(--secondary-color);
+	font-weight: 600;
+	line-height: 25px;
+}
+
+
+.patent-author {
+	padding-top: 5px;
+	font-size: 14px;
+	color: var(--secondary-color);
+	font-weight: 480;
+	line-height: 25px;
+}
+
+.patent-link {
+	padding-top: 5px;
+	font-size: 14px;
+	color: purple;
+	font-weight: 700;
+}
+
+.patent-icon {
+	display: flex;
+	flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+	.patent-left-side {
+		min-width: 10%;
+		max-width: 10%;
+	}
+
+	.patent-right-side {
+		flex-basis: 90%;
+		min-width: 85%;
+		max-width: 85%;
+	}
+}

@@ -27,8 +27,8 @@ function App() {
 				<Route path="/events" element={<Events />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/research" element={<Research />} />
-				<Route path="/publications" element={<SearchComponent />} />
-				{/* <Route path="/publications" element={<Publications />} /> */}
+				<Route path="/search" element={<SearchComponent />} />
+				<Route path="/publications" element={<Publications />} />
 				<Route path="/opensource" element={<Opensource />} />
 			</Routes>
 		</div>

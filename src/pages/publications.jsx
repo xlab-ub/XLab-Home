@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Anchor, Col, Row } from 'antd';
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Publication from "../components/publications/publication";
+import Patent from "../components/publications/patent";
+import Book from "../components/publications/book";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import PublicationsINFO from "../data/publications";
+import LibraryINFO from "../data/publications";
 
 import "./styles/publications.css";
 import Toolbox from "../components/publications/toolbox";
@@ -58,22 +61,156 @@ const Publications = () => {
 
 						<div className="publications-container">
 							<div className="publications-wrapper">
-								{PublicationsINFO.conferences.map((item, index) => (
-									<div
-										className="publications-article"
-										key={(index + 1).toString()}
-									>
-										<Publication
-											key={(index + 1).toString()}
-											date={item.date}
-											conf={item.conf}
-											title={item.title}
-											author={item.author}
-											paper_link={item.paper_link}
-											code_link={item.code_link}
-										/>
-									</div>
-								))}
+								<Row>
+									<Col span={20}>
+										<div id="part-1" className="section-container">
+											<div className="section-title">Conferences</div>
+											{LibraryINFO.conferences.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Publication
+														key={(index + 1).toString()}
+														date={item.date}
+														source={item.source}
+														title={item.title}
+														author={item.author}
+														paper_link={item.paper_link}
+														code_link={item.code_link}
+													/>
+												</div>
+											))}
+										</div>
+										<div id="part-2" className="section-container">
+											<div className="section-title">Journals</div>
+											{LibraryINFO.journals.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Publication
+														key={(index + 1).toString()}
+														date={item.date}
+														source={item.source}
+														title={item.title}
+														author={item.author}
+														paper_link={item.paper_link}
+														code_link={item.code_link}
+													/>
+												</div>
+											))}
+										</div>
+										<div id="part-3" className="section-container">
+											<div className="section-title">Invited Papers</div>
+											{LibraryINFO.invited_papers.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Publication
+														key={(index + 1).toString()}
+														date={item.date}
+														source={item.source}
+														title={item.title}
+														author={item.author}
+														paper_link={item.paper_link}
+														code_link={item.code_link}
+													/>
+												</div>
+											))}
+										</div>
+										<div id="part-4" className="section-container">
+											<div className="section-title">Workshops</div>
+											{LibraryINFO.workshops.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Publication
+														key={(index + 1).toString()}
+														date={item.date}
+														source={item.source}
+														title={item.title}
+														author={item.author}
+														paper_link={item.paper_link}
+														code_link={item.code_link}
+													/>
+												</div>
+											))}
+										</div>
+										<div id="part-5" className="section-container">
+											<div className="section-title">Patents</div>
+											{LibraryINFO.patents.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Patent
+														key={(index + 1).toString()}
+														date={item.date}
+														id={item.id}
+														title={item.title}
+														author={item.author}
+													/>
+												</div>
+											))}
+										</div>
+										<div id="part-6" className="section-container">
+											<div className="section-title">Bookchapters</div>
+											{LibraryINFO.bookchapters.map((item, index) => (
+												<div
+													className="publications-article"
+													key={(index + 1).toString()}
+												>
+													<Book
+														key={(index + 1).toString()}
+														date={item.date}
+														publish={item.publish}
+														title={item.title}
+														author={item.author}
+													/>
+												</div>
+											))}
+										</div>
+									</Col>
+									<Col span={4}>
+									<Anchor
+										items={[
+											{
+												key: 'part-1',
+												href: '#part-1',
+												title: 'Conferences',
+											},
+											{
+												key: 'part-2',
+												href: '#part-2',
+												title: 'Journals',
+											},
+											{
+												key: 'part-3',
+												href: '#part-3',
+												title: 'Invited Papers',
+											},
+											{
+												key: 'part-4',
+												href: '#part-4',
+												title: 'Workshops',
+											},
+											{
+												key: 'part-5',
+												href: '#part-5',
+												title: 'Patents',
+											},
+											{
+												key: 'part-6',
+												href: '#part-6',
+												title: 'Bookchapters',
+											},
+										]}
+									/>
+									</Col>
+								</Row>
 							</div>
 							<Toolbox />
 						</div>

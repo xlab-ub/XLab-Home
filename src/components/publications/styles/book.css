@@ -1,22 +1,22 @@
 @import "../../../data/styles.css";
 
-.publication {
+.book {
 	display: flex;
 }
 
-.publication a {
+.book a {
 	text-decoration: none;
 }
 
-.publication-left-side {
+.book-left-side {
 	min-width: 15%;
 	max-width: 15%;
 }
 
-.publication-right-side {
+.book-right-side {
 	background: #fafafa;
 	flex-basis: 60%;
-	min-width: 700px;
+	min-width: 80%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
@@ -24,26 +24,26 @@
 	opacity: 1;
 }
 
-/* .publication-right-side:hover {
+/* .book-right-side:hover {
 	background: #fafafa;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 } */
 
-.publication-date {
+.book-date {
 	padding-top: 10px;
 	font-size: 18px;
 	font-weight: 800;
 	color: var(--link-color);
 }
 
-.publication-title {
+.book-title {
 	color: purple;
 	font-size: 16px;
 	font-weight: 600;
 }
 
-.publication-description {
+.book-description {
 	padding-top: 5px;
 	font-size: 16px;
 	color: var(--secondary-color);
@@ -52,7 +52,7 @@
 }
 
 
-.publication-author {
+.book-author {
 	padding-top: 5px;
 	font-size: 14px;
 	color: var(--secondary-color);
@@ -60,25 +60,25 @@
 	line-height: 25px;
 }
 
-.publication-link {
+.book-link {
 	padding-top: 5px;
 	font-size: 14px;
 	color: purple;
 	font-weight: 700;
 }
 
-.publication-icon {
+.book-icon {
 	display: flex;
 	flex-direction: row;
 }
 
 @media (max-width: 1024px) {
-	.publication-left-side {
+	.book-left-side {
 		min-width: 10%;
 		max-width: 10%;
 	}
 
-	.publication-right-side {
+	.book-right-side {
 		flex-basis: 90%;
 		min-width: 85%;
 		max-width: 85%;

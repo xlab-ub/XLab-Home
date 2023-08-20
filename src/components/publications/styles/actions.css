@@ -1,0 +1,12 @@
+.searchInput {
+    .ant-input {
+        height: 32px;
+        border-radius: 6px;
+    }
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
