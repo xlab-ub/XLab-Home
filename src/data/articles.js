@@ -10,8 +10,8 @@ const ArticlesINFO = [
 	},
     {
 		title: "LLMs: Revolutionizing AI-Powered Communication",
-        author: "Jiajie Li",
-		author_profile: "Jiajie-Li.png",
+        author: "Changjae Lee",
+		author_profile: "Changjae-Lee.png",
 		date: "2022-12-20",
 		cover: "article20221220_01.png",
 		desc: "Language Models (LMs) have undergone remarkable advancements in recent years, culminating in the development of Large Language Models (LLMs). These models, powered by deep learning techniques, have demonstrated unprecedented abilities in understanding, generating, and manipulating human language. This paper delves into the architecture, training methodologies, applications, and ethical considerations surrounding LLMs.",

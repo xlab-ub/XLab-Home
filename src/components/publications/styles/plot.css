@@ -1,0 +1,10 @@
+
+.plotWrapper p {
+    color: var(--secondary-color);
+	font-family: var(--secondary-font);
+	font-size: 32px;
+	font-weight: 700;
+}
+.singlePlot {
+    margin-bottom: 40px;
+}

@@ -1,5 +1,5 @@
 const LibraryINFO = {
-	conferences: [
+	Conferences: [
 		{
 			"date": "2022",
 			"source": "ASP-DAC",
@@ -1260,7 +1260,7 @@ const LibraryINFO = {
 			"code_link": ""
 		}
 	],
-	patents: [
+	Patents: [
 		{
 			"date": "2021",
 			"title": "Global Prosody Style Transfer Without Text Transcriptions",
@@ -1550,7 +1550,7 @@ const LibraryINFO = {
 			"title": "A Multiple-driver-connected Compact Disc Library System under Single SCSI Logic Unit"
 		}	
 	],
-	bookchapters: [
+	Bookchapters: [
 		{
 			"date": "2000",
 			"author": "J. Xiong",
@@ -1576,7 +1576,7 @@ const LibraryINFO = {
 			"publish": "Chapter in Stochastic Optimization, Theory and Applications, Intech publishing, ISBN: 978-953-307-829-8, 2011."
 		}
 	],
-	journals: [
+	Journals: [
 		{
 			"date": "2021",
 			"source": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
@@ -1898,7 +1898,7 @@ const LibraryINFO = {
 			"code_link": ""
 		}
 	],
-	workshops: [
+	Workshops: [
 		{
 			"author": "J. Li, B. Cheng, R. Feris, J. Xiong, T. Huang, W. Hwu, and H. Shi",
 			"date": "2021",
@@ -2268,7 +2268,7 @@ const LibraryINFO = {
 			"code_link": ""
 		}
 	],
-	invited_papers: [
+	InvitedPapers: [
 		{	
 			"date": "2021",
 			"author": "Z. Wang, Z. Liang, S. Zhou, C. Ding,  J. Xiong, Y. Shi, and W. Jiang",

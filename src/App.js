@@ -12,6 +12,7 @@ import Opensource from "./pages/opensource";
 import Events from "./pages/events";
 import Blog from "./pages/blog";
 import SearchComponent from './components/publications/actions.jsx'
+import PlotComponent from "./components/publications/plot";
 
 import "./app.css";
 import './static/css/main.scss'
@@ -28,6 +29,7 @@ function App() {
 				<Route path="/team" element={<Team />} />
 				<Route path="/research" element={<Research />} />
 				<Route path="/search" element={<SearchComponent />} />
+				<Route path="/plot" element={<PlotComponent />} />
 				<Route path="/publications" element={<Publications />} />
 				<Route path="/opensource" element={<Opensource />} />
 			</Routes>

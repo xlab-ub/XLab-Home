@@ -50,6 +50,7 @@ a {
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	color: var(--secondary-color)
 }
 
 .events-container h4 {

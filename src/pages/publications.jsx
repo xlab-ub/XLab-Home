@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Anchor, Col, Row } from 'antd';
-
+import { Anchor, Col, Row, Statistic } from 'antd';
+import CountUp from 'react-countup';
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
@@ -15,6 +15,8 @@ import LibraryINFO from "../data/publications";
 
 import "./styles/publications.css";
 import Toolbox from "../components/publications/toolbox";
+
+const formatter = (value) => <CountUp end={value} separator="," />;
 
 const Publications = () => {
 	useEffect(() => {
@@ -65,7 +67,7 @@ const Publications = () => {
 									<Col span={20}>
 										<div id="part-1" className="section-container">
 											<div className="section-title">Conferences</div>
-											{LibraryINFO.conferences.map((item, index) => (
+											{LibraryINFO.Conferences.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -84,7 +86,7 @@ const Publications = () => {
 										</div>
 										<div id="part-2" className="section-container">
 											<div className="section-title">Journals</div>
-											{LibraryINFO.journals.map((item, index) => (
+											{LibraryINFO.Journals.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -103,7 +105,7 @@ const Publications = () => {
 										</div>
 										<div id="part-3" className="section-container">
 											<div className="section-title">Invited Papers</div>
-											{LibraryINFO.invited_papers.map((item, index) => (
+											{LibraryINFO.InvitedPapers.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -122,7 +124,7 @@ const Publications = () => {
 										</div>
 										<div id="part-4" className="section-container">
 											<div className="section-title">Workshops</div>
-											{LibraryINFO.workshops.map((item, index) => (
+											{LibraryINFO.Workshops.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -141,7 +143,7 @@ const Publications = () => {
 										</div>
 										<div id="part-5" className="section-container">
 											<div className="section-title">Patents</div>
-											{LibraryINFO.patents.map((item, index) => (
+											{LibraryINFO.Patents.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -158,7 +160,7 @@ const Publications = () => {
 										</div>
 										<div id="part-6" className="section-container">
 											<div className="section-title">Bookchapters</div>
-											{LibraryINFO.bookchapters.map((item, index) => (
+											{LibraryINFO.Bookchapters.map((item, index) => (
 												<div
 													className="publications-article"
 													key={(index + 1).toString()}
@@ -175,6 +177,7 @@ const Publications = () => {
 										</div>
 									</Col>
 									<Col span={4}>
+									<div className="statis"><Statistic title="Total Contributions" value={317} formatter={formatter} /></div>
 									<Anchor
 										items={[
 											{

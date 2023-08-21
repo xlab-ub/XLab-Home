@@ -74,6 +74,11 @@
     width: 100%;
 }
 
+.statis {
+	margin-top: 90px;
+	margin-bottom: 20px;
+}
+
 @media (max-width: 1024px) {
 	.publications-title {
 		width: 100% !important;

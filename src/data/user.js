@@ -42,7 +42,7 @@ const INFO = {
 	publications: {
 		title: "Make Every Work Count.",
 		description:
-			"Chronological collection of publications.",
+			"Chronological collection of all resources.",
 	},
 
 	projects: [

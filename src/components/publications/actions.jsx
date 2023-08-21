@@ -3,6 +3,9 @@ import { Button, Input, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Main from './main';
 import LibraryINFO from "../../data/publications";
+import Book from './book';
+import Publication from './publication';
+import Patent from './patent';
 
 import "./styles/actions.css"
 
@@ -12,12 +15,12 @@ const SearchComponent = () => {
 
   const handleSearch = (searchKeyword) => {
     const results = {
-      conferences: [],
-      patents: [],
-      bookchapters: [],
-      journals: [],
-      workshops: [],
-      invited_papers: []
+      Conferences: [],
+      Patents: [],
+      Bookchapters: [],
+      Journals: [],
+      Workshops: [],
+      InvitedPapers: []
     };
 
     // Search in each section
@@ -42,33 +45,56 @@ const SearchComponent = () => {
   return (
     <Main>
       <div className='searchWrapper'>
-          <Space.Compact>
-              <Input value={keyword} onPressEnter={() => handleSearch(keyword)} onChange={(e) => setKeyword(e.target.value)} placeholder="Enter a keyword..." style={{ 'width': '600px', 'height': '40px', 'border-top-left-radius': '6px', 'border-bottom-left-radius': '6px', 'padding-top': '0', 'padding-bottom': '0', 'background': '#FFF' }} />
-              <Button onClick={() => handleSearch(keyword)} icon={<SearchOutlined style={{ fontSize: '24px', color: '#FFF'}} />} style={{ 'width': '100px', 'height': '40px', 'border-top-right-radius': '6px', 'border-bottom-right-radius': '6px' }} type="primary" />
-          </Space.Compact>
+          <div className='searchInput'>
+            <Space.Compact>
+                <Input value={keyword} onPressEnter={() => handleSearch(keyword)} onChange={(e) => setKeyword(e.target.value)} placeholder="Enter a keyword..." style={{ 'width': '500px', 'height': '40px', 'fontSize': '20px', 'border-top-left-radius': '6px', 'border-bottom-left-radius': '6px', 'padding-top': '0', 'padding-bottom': '0', 'background': '#FFF' }} />
+                <Button onClick={() => handleSearch(keyword)} icon={<SearchOutlined style={{ fontSize: '24px', color: '#FFF'}} />} style={{ 'width': '80px', 'height': '40px', 'border-top-right-radius': '6px', 'border-bottom-right-radius': '6px' }} type="primary" />
+            </Space.Compact>
+          </div>
 
           {Object.keys(searchResults).map((section) => (
           <div key={section}>
             {searchResults[section].length > 0 ? (
-              <div>
-              <h2>{section}</h2>
-              <ul>
-                {searchResults[section].map(({ index, item }) => (
-                  <li key={index}>
-                    {item && (
-                      <div>
-                        {Object.entries(item).map(([key, value]) => (
-                          <p key={key}>
-                            <strong>{key}:</strong> {value}
-                          </p>
-                        ))}
-                      </div>
-                    )}
-                  </li>
-                ))}
-              </ul>
+              <div className='sectionWrapper'>
+                <div className='sectionHead'>
+                {section}
+                </div>
+                <p>{"(About"} {searchResults[section].length} {"results)"}</p>
+                <div className='sectionContent'>
+                  {searchResults[section].map(({ index, item }) => (
+                    <div className="publications-article" key={(index + 1).toString()}>
+                      {section === 'patents' ? (
+                        <Patent
+                          key={(index + 1).toString()}
+                          date={item.date}
+                          id={item.id}
+                          title={item.title}
+                          author={item.author}
+                        />
+                      ) : section === 'bookchapters' ? (
+                        <Book
+                          key={(index + 1).toString()}
+                          date={item.date}
+                          publish={item.publish}
+                          title={item.title}
+                          author={item.author}
+                        />
+                      ) : (
+                        <Publication
+                          key={(index + 1).toString()}
+                          date={item.date}
+                          source={item.source}
+                          title={item.title}
+                          author={item.author}
+                          paper_link={item.paper_link}
+                          code_link={item.code_link}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ) : (
+              ) : (
               <p></p>
             )}
           </div>
