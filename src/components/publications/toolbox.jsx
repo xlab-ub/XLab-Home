@@ -23,7 +23,7 @@ const Toolbox = () => {
           }}
         >
           <div style={{"margin-top": "10px"}}><Link to = "/search"><FloatButton icon={<SearchOutlined />} /></Link></div>
-          <div style={{"margin-top": "10px"}}><Link><FloatButton icon={<FilterOutlined />} /></Link></div>
+          <div style={{"margin-top": "10px"}}><Link to = "/filter"><FloatButton icon={<FilterOutlined />} /></Link></div>
           <div style={{"margin-top": "10px"}}><Link to = "/plot"><FloatButton icon={<BarChartOutlined />} /></Link></div>
           <div style={{"margin-top": "10px"}}><Link><FloatButton icon={<ToTopOutlined />} onClick={scrollToTop} /></Link></div>
           <div style={{"margin-top": "10px"}}><Link to="/publications"><FloatButton icon={<RollbackOutlined />} /></Link></div>

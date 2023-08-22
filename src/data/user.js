@@ -29,7 +29,7 @@ const INFO = {
 		subtitle1: "Research Fields",
 		subtitle2: "Announcements",
 		subtitle3: "Join Us ",
-		subtitle4: "Contact ",
+		subtitle4: "Sponsors ",
 		recruit: "X-Lab has multiple openings for highly motivated Ph.D. students and Postdoctoral Fellows to conduct cutting-edge AI systems and solutions research!",
 	},
 

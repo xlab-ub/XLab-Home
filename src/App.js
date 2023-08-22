@@ -13,6 +13,7 @@ import Events from "./pages/events";
 import Blog from "./pages/blog";
 import SearchComponent from './components/publications/actions.jsx'
 import PlotComponent from "./components/publications/plot";
+import FilterComponent from "./components/publications/filter";
 
 import "./app.css";
 import './static/css/main.scss'
@@ -30,6 +31,7 @@ function App() {
 				<Route path="/research" element={<Research />} />
 				<Route path="/search" element={<SearchComponent />} />
 				<Route path="/plot" element={<PlotComponent />} />
+				<Route path="/filter" element={<FilterComponent />} />
 				<Route path="/publications" element={<Publications />} />
 				<Route path="/opensource" element={<Opensource />} />
 			</Routes>

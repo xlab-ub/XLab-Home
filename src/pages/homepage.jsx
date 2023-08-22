@@ -11,7 +11,6 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllNews from "../components/news/allNews"
 import AllProjects from "../components/projects/allProjects";
-import Contact from "../components/homepage/contact"
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -125,9 +124,6 @@ const Homepage = () => {
 						</div>
 						<div className="section-title">
 							{INFO.homepage.subtitle4}
-						</div>
-						<div className="homepage-contact">
-							<Contact />
 						</div>
 						<div className="page-footer">
 							<Footer />
