@@ -19,8 +19,6 @@
 	margin-left: 2%;
 }
 
-
-
 .homepage-container {
 	padding-top: 0px;
 }
@@ -85,25 +83,17 @@
 
 .homepage-news {
 	display: flex;
+	padding-bottom: 30px;
 }
 
 .homepage-recruit {
-	width: 85%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	padding-top: 30px;
 	padding-left: 80px;
-	padding-right: 40px;
 	padding-bottom: 30px;
-}
-
-.homepage-contact {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	padding-top: 30px;
-	padding-left: 80px;
+	text-align: justify;
 }
 
 .homepage-projects {
@@ -111,19 +101,17 @@
 	padding-top: 60px;
 }
 
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
+.sponsor-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.homepage-article {
-	padding-bottom: 5px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
+.sponsor-wrapper {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -160,7 +148,6 @@
 		font-weight: 700;
 	}
 
-
 	.homepage-first-area-right-side {
 		width: 100%;
 		order: 1;
@@ -181,15 +168,6 @@
 		flex-basis: auto;
 	}
 
-	.homepage-articles {
-		flex-basis: auto;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
-	}
 	.more {
 		color: #14b8a6;
 	}

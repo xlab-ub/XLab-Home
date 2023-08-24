@@ -88,10 +88,8 @@ const Research = () => {
 							</Col>
 						</Row>
 					</div>
-					
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<hr />
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

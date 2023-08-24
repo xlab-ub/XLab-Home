@@ -45,7 +45,7 @@ const Blog = () => {
 
 						<div className="blog-img">
 							<img
-								src="publications.jpg"
+								src="banner.jpg"
 								alt="about"
 							/>
 						</div>
@@ -54,9 +54,8 @@ const Blog = () => {
 							<AllBlogs />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<hr />
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

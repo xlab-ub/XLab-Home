@@ -46,7 +46,7 @@ const Opensource = () => {
 						</div>
 						<div className="opensource-img">
 							<img
-								src="opensource.png"
+								src="banner.jpg"
 								alt="about"
 							/>
 						</div>
@@ -61,9 +61,8 @@ const Opensource = () => {
                             </article>
                         </div>
                     </div>
-                    <div className="page-footer">
-						<Footer />
-					</div>
+                    <hr />
+					<Footer />
                 </div>
             </div>
         </React.Fragment>

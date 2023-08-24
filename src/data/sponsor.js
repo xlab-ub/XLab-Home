@@ -1,11 +1,15 @@
 const SponsorINFO = [
 	{
 		title: "IBM",
-		logo: "IBM.logo",
+		logo: "IBM.png",
 	},
 	{
 		title: "National Science Foundation",
-		logo: "NSF.logo",
+		logo: "NSF.png",
+	},
+	{
+		title: "UB",
+		logo: "UB.png",
 	}
 ]
 

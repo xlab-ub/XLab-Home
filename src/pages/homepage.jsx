@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,9 +10,11 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import AllNews from "../components/news/allNews"
+import AllNews from "../components/news/allNews";
 import AllProjects from "../components/projects/allProjects";
+import Sponsor from "../components/homepage/sponsor";
 
+import SponsorINFO from "../data/sponsor";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -54,7 +57,7 @@ const Homepage = () => {
 
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
-									<a href="" style={{color: '#14b8a6'}}>My Bio</a>
+									<a href="/bio" style={{color: '#14b8a6'}}>About me</a>
 					
 								</div>
 
@@ -105,14 +108,14 @@ const Homepage = () => {
 							</div>
 						</div>
 						<div className="homepage-projects">
-							<div className="section-title">
+							<Link to="/research"><div className="section-title">
 								{INFO.homepage.subtitle1}
-							</div>
+							</div></Link>
 							<AllProjects />
 						</div>
-						<div className="section-title">
+						<Link to="/events"><div className="section-title">
 							{INFO.homepage.subtitle2}
-						</div>
+						</div></Link>
 						<div className="homepage-news">
 							<AllNews />
 						</div>
@@ -125,9 +128,17 @@ const Homepage = () => {
 						<div className="section-title">
 							{INFO.homepage.subtitle4}
 						</div>
-						<div className="page-footer">
-							<Footer />
+						<div className="sponsor-container ">
+							{SponsorINFO.map((item, index) => (
+								<div key={index} className="sponsor-wrapper">
+									<Sponsor
+									logo={item.logo}
+									/>
+								</div>
+							))}
 						</div>
+						<hr />
+						<Footer />
 					</div>
 				</div>
 			</div>

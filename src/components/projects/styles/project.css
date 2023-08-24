@@ -44,7 +44,9 @@
 }
 
 .project-description {
+	padding-right: 20px;
 	color: var(--secondary-color);
+	text-align: justify;
 }
 
 .project-link {

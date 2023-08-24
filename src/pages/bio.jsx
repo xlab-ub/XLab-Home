@@ -43,9 +43,8 @@ const Bio = () => {
             </article>
           </Side>
         </div>
-        <div className="bio-page-footer">
-          <Footer />
-        </div>
+        <hr />
+				<Footer />
       </div>
     </React.Fragment>
   );

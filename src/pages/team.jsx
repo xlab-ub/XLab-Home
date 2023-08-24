@@ -45,7 +45,7 @@ const Team = () => {
 
 						<div className="team-img">
 							<img
-								src="publications.jpg"
+								src="banner.jpg"
 								alt="about"
 							/>
 						</div>
@@ -60,9 +60,8 @@ const Team = () => {
 							</div>
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<hr />
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

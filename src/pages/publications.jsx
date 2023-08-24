@@ -52,7 +52,7 @@ const Publications = () => {
 
 						<div className="publications-img">
 							<img
-								src="publications.jpg"
+								src="banner.jpg"
 								alt="about"
 							/>
 						</div>
@@ -218,9 +218,8 @@ const Publications = () => {
 							<Toolbox />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<hr />
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

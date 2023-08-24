@@ -2,12 +2,10 @@
 
 .footer {
 	display: flex;
-	padding-top: 25px;
-	margin-top: 50px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	align-items: center;
 	flex-direction: column;
-	padding: 40px 0;
 }
 .footer p {
 	display: block;

@@ -11,8 +11,10 @@ const New = (props) => {
 			<div className="homepage-new">
                 <Link to={link}>
                     <div className="homepage-new-content">
-                        <div className="homepage-new-icon"><img src="calendar.png" alt="logo" /></div>
-                        <div className="homepage-new-date">{date}</div>
+                        <div className="homepage-new-header">
+                            <div className="homepage-new-icon"><img src="calendar.png" alt="logo" /></div>
+                            <div className="homepage-new-date">{date}</div>
+                        </div>
                         <div className="homepage-new-description">
                             {description}
                         </div>
