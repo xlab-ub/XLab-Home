@@ -5,7 +5,7 @@ import { LinkOutlined } from '@ant-design/icons';
 import EventsINFO from '../../data/events';
 import "./styles/eventslist.css";
 
-const data = EventsINFO.map((event, i) => ({
+const data = EventsINFO.map((event) => ({
   href: event.link,
   title: event.title,
   img: event.img,

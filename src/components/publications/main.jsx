@@ -40,7 +40,7 @@ const Main = (props) => (
 
                     <div className="publications-img">
                         <img
-                            src="publications.jpg"
+                            src="banner.jpg"
                             alt="about"
                         />
                     </div>
