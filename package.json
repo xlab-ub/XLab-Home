@@ -1,11 +1,10 @@
 {
-	"name": "reactfolio",
-	"version": "1.1.0",
-	"description": "Personal portfolio template built using Reactjs",
+	"name": "xlab-ub",
+	"version": "0.1",
+	"description": "XLAB-UB Website built using Reactjs",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
-		"email": "mail@tharindu.dev",
-		"url": "https://tharindu.dev"
+		"name": "Yuting Hu",
+		"email": "yhu54@buffalo.edu"
 	},
 	"license": "MIT",
 	"private": true,
