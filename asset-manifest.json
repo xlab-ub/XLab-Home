@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/xlab-home/static/css/main.228a1952.css",
-    "main.js": "/xlab-home/static/js/main.0d3b37a3.js",
+    "main.js": "/xlab-home/static/js/main.ddaf1d86.js",
     "static/js/625.d67e9d58.chunk.js": "/xlab-home/static/js/625.d67e9d58.chunk.js",
     "static/js/787.0c062b56.chunk.js": "/xlab-home/static/js/787.0c062b56.chunk.js",
     "static/media/about.md": "/xlab-home/static/media/about.8196b3d5b5b499deb5a6.md",
     "index.html": "/xlab-home/index.html",
     "main.228a1952.css.map": "/xlab-home/static/css/main.228a1952.css.map",
-    "main.0d3b37a3.js.map": "/xlab-home/static/js/main.0d3b37a3.js.map",
+    "main.ddaf1d86.js.map": "/xlab-home/static/js/main.ddaf1d86.js.map",
     "787.0c062b56.chunk.js.map": "/xlab-home/static/js/787.0c062b56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.228a1952.css",
-    "static/js/main.0d3b37a3.js"
+    "static/js/main.ddaf1d86.js"
   ]
 }
