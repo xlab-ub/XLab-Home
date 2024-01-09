@@ -61,10 +61,10 @@
 		"source-map-explorer": "^2.5.3"
 	},
 	"scripts": {
+		"start": "react-scripts start",
 		"predeploy" : "npm run build",
 		"deploy": "gh-pages -d build",
-		"start": "react-scripts start",
-		"build": "react-scripts build && cp build/index.html build/404.html",
+		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
