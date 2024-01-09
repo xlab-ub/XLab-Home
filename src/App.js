@@ -23,7 +23,7 @@ function App() {
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/xlab-home" element={<Homepage />} />
+				<Route path="/xlab-home/" element={<Homepage />} />
 				<Route path="/bio" element={<Bio />} />
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/events" element={<Events />} />

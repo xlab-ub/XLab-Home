@@ -19,7 +19,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/xlab-home">Home</Link>
+								<Link to="/xlab-home/">Home</Link>
 							</li>
 							<li
 								className={

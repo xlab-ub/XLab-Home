@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SideBar = () => (
   <section id="sidebar">
     <section id="intro">
-      <Link to="/xlab-home" className="logo">
+      <Link to="/xlab-home/" className="logo">
         <img
                         src="Jinjun.jpg"
                         alt="about"
@@ -33,7 +33,7 @@ const SideBar = () => (
     </section>
 
     <section id="footer">
-      <p className="copyright">&copy; XLab-UB <Link to="/xlab-home">Home</Link>.</p>
+      <p className="copyright">&copy; XLab-UB <Link to="/xlab-home/">Home</Link>.</p>
     </section>
   </section>
 );
