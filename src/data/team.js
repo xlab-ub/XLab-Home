@@ -79,9 +79,17 @@ const TeamINFO = {
 			start: "2023.03 ~ Present",
 			B_S: "",
 			M_S: "",
-			profile: "Jiajie-Li.png",
-			link: "Ali.png",
+			profile: "Ali.png",
+			link: "",
 		},
+		{
+			name: "Danchen Liu",
+			start: "2023.09 ~ Present",
+			B_S: "",
+			M_S: "",
+			profile: "Danchen-Liu.png",
+			link: "",
+		}
 	],
     undergraduates:  [
 		{
