@@ -24,16 +24,16 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/xlab-home/" element={<Homepage />} />
-				<Route path="/bio" element={<Bio />} />
-				<Route path="/blog" element={<Blog />} />
-				<Route path="/events" element={<Events />} />
-				<Route path="/team" element={<Team />} />
-				<Route path="/research" element={<Research />} />
-				<Route path="/search" element={<SearchComponent />} />
-				<Route path="/plot" element={<PlotComponent />} />
-				<Route path="/filter" element={<FilterComponent />} />
-				<Route path="/publications" element={<Publications />} />
-				<Route path="/opensource" element={<Opensource />} />
+				<Route path="/xlab-home/bio" element={<Bio />} />
+				<Route path="/xlab-home/blog" element={<Blog />} />
+				<Route path="/xlab-home/events" element={<Events />} />
+				<Route path="/xlab-home/team" element={<Team />} />
+				<Route path="/xlab-home/research" element={<Research />} />
+				<Route path="/xlab-home/search" element={<SearchComponent />} />
+				<Route path="/xlab-home/plot" element={<PlotComponent />} />
+				<Route path="/xlab-home/filter" element={<FilterComponent />} />
+				<Route path="/xlab-home/publications" element={<Publications />} />
+				<Route path="/xlab-home/opensource" element={<Opensource />} />
 			</Routes>
 		</div>
 	);

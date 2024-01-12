@@ -28,7 +28,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/bio">About</Link>
+								<Link to="/xlab-home/bio">About</Link>
 							</li>
 							<li
 								className={
@@ -37,7 +37,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/research">Research</Link>
+								<Link to="/xlab-home/research">Research</Link>
 							</li>
 							<li
 								className={
@@ -46,7 +46,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/publications">Publications</Link>
+								<Link to="/xlab-home/publications">Publications</Link>
 							</li>
 							<li
 								className={
@@ -55,7 +55,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/opensource">Opensource</Link>
+								<Link to="/xlab-home/opensource">Opensource</Link>
 							</li>
 							<li
 								className={
@@ -64,7 +64,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/team">Team</Link>
+								<Link to="/xlab-home/team">Team</Link>
 							</li>
 							<li
 								className={
@@ -73,7 +73,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/events">Events</Link>
+								<Link to="/xlab-home/events">Events</Link>
 							</li>
 							<li
 								className={
@@ -82,7 +82,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/blog">Blog</Link>
+								<Link to="/xlab-home/blog">Blog</Link>
 							</li>			
 						</ul>
 					</div>
