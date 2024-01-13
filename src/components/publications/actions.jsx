@@ -47,7 +47,7 @@ const SearchComponent = () => {
       <div className='searchWrapper'>
           <div className='searchInput'>
             <Space.Compact>
-                <Input value={keyword} onPressEnter={() => handleSearch(keyword)} onChange={(e) => setKeyword(e.target.value)} placeholder="Enter a keyword, eg. LLMs" style={{ 'width': '500px', 'height': '40px', 'fontSize': '20px', 'border-top-left-radius': '6px', 'border-bottom-left-radius': '6px', 'padding-top': '0', 'padding-bottom': '0', 'background': '#FFF' }} />
+                <Input value={keyword} onPressEnter={() => handleSearch(keyword)} onChange={(e) => setKeyword(e.target.value)} placeholder="Enter a keyword, eg. GPU" style={{ 'width': '500px', 'height': '40px', 'fontSize': '20px', 'border-top-left-radius': '6px', 'border-bottom-left-radius': '6px', 'padding-top': '0', 'padding-bottom': '0', 'background': '#FFF' }} />
                 <Button onClick={() => handleSearch(keyword)} icon={<SearchOutlined style={{ fontSize: '24px', color: '#FFF'}} />} style={{ 'width': '80px', 'height': '40px', 'border-top-right-radius': '6px', 'border-bottom-right-radius': '6px' }} type="primary" />
             </Space.Compact>
           </div>
