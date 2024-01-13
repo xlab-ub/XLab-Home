@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkxlab_ub=self.webpackChunkxlab_ub||[]).push([[625],{625:function(b,a,e){b.exports=e.p+"static/media/about.8196b3d5b5b499deb5a6.md"}}]);
