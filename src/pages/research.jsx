@@ -46,7 +46,7 @@ const Research = () => {
 						</div>
 						<div className="research-img">
 							<img
-								src="Ai.jpg"
+								src="AI.jpg"
 								alt="about"
 							/>
 						</div>
