@@ -50,6 +50,7 @@ const Research = () => {
 								alt="about"
 							/>
 						</div>
+						<div></div>
 						<Row>
 							<Col span={20}>
 							<div id="alg" className="section-container">
@@ -58,11 +59,23 @@ const Research = () => {
 							</div>
 							<div id="sol" className="section-container">
 								<div className="section-title">{ResearchINFO.main.section2.whole}</div>
-								<AllCases section='section1' />
+								<AllCases section='section2' />
 							</div>
 							<div id="sys" className="section-container">
 								<div className="section-title">{ResearchINFO.main.section3.whole}</div>
-								<AllCases section='section1' />
+								<AllCases section='section3' />
+							</div>
+							<div id="acc" className="section-container">
+								<div className="section-title">{ResearchINFO.main.section4.whole}</div>
+								<AllCases section='section4' />
+							</div>
+							<div id="sec" className="section-container">
+								<div className="section-title">{ResearchINFO.main.section5.whole}</div>
+								<AllCases section='section5' />
+							</div>
+							<div id="tool" className="section-container">
+								<div className="section-title">{ResearchINFO.main.section6.whole}</div>
+								<AllCases section='section6' />
 							</div>
 							</Col>
 							<Col span={4}>
@@ -83,6 +96,21 @@ const Research = () => {
 									href: '#sys',
 									title: 'AI Systems',
 								},
+								{
+									key: 'acc',
+									href: '#acc',
+									title: 'AI Algorithms',
+								},
+								{
+									key: 'sec',
+									href: '#sec',
+									title: 'AI Solutions',
+								},
+								{
+									key: 'tool',
+									href: '#tool',
+									title: 'AI Systems',
+								}
 								]}
 							/>
 							</Col>

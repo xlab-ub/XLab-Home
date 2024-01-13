@@ -22,7 +22,9 @@ const SingleSwitch = (props) => {
 	return (
 		<React.Fragment>
 			<div className="events-switch-img">
-                <p>{title}</p>
+                <div className="events-switch-img title">
+                    {title}
+                </div>
                 <img
                     src={img}
                     alt="about"
@@ -82,7 +84,6 @@ const Events = () => {
                     </div>
                     <hr />
                     <div className="events-container">
-                        
                         {/* <DownOutlined style={{ fontSize: '32px', color: '#005BBB'}}/> */}
                         <AllEvents />
                     </div>

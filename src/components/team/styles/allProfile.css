@@ -16,6 +16,17 @@
 	text-align: center;
 }
 
+.team-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.team-title {
+	font-size: 32px;
+	font-weight: 700;
+}
+
 @media (max-width: 600px) {
 	.all-profiles-profile {
 		width: calc(100% / 2);

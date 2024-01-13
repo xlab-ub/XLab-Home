@@ -26,11 +26,6 @@
 	padding-top: 20px;
 }
 
-.team-container {
-	display: flex;
-	flex-direction: column;
-}
-
 .team-wrapper {
 	padding-left: 50px;
 	display: flex;
@@ -44,6 +39,7 @@
 .team-img {
 	width: 100%;
     padding-top: 20px;
+	margin-bottom: 20px;
 	
 }
 

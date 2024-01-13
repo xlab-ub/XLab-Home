@@ -20,11 +20,11 @@ const Profile = (props) => {
                     <div className="profile-start">
                         {start}
                     </div>
-                    <div className="profile-bs">
-                        {B_S}
-                    </div>
                     <div className="profile-ms">
-                        {M_S}
+                        MS. {M_S}
+                    </div>
+                    <div className="profile-bs">
+                        BS. {B_S}
                     </div>
                 </div>
             </Link>

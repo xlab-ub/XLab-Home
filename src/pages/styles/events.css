@@ -30,27 +30,22 @@ a {
 .events-container {
 	display: flex;
 	flex-direction: column;
-	margin-top: 60px;
+	margin: 0;
 }
 
 .events-switch {
 	display: flex;
 	flex-direction: column;
-	
-}
-.events-switch-img {
-	width: 100%;
-	z-index: 999;
-	margin-bottom: 10px;
 }
 
-.events-switch-img p {
-	font-size: 28px;
-	font-weight: 600;
-	margin: 0 auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: var(--secondary-color)
+.events-switch-img {
+	padding-top: 20px;
+	width: 100%;
+	z-index: 999;
+}
+
+.events-switch-img img {
+	margin-top: 30px;
 }
 
 .events-container h4 {

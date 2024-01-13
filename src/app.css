@@ -57,6 +57,7 @@
 	font-size: 45px;
 	font-weight: 700;
 	width: 70%;
+	color: #373535
 }
 .section-title {
 	color: var(--primary-color);
@@ -64,6 +65,7 @@
 	font-size: 32px;
 	font-weight: 700;
 	width: 70%;
+	color: #373535
 }
 .subtitle {
 	padding-top: 10px;
@@ -72,6 +74,7 @@
 	line-height: 28px;
 	width: 70%;
 	margin-top: 25px;
+	color: #373535
 }
 
 .page-footer {

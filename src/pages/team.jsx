@@ -39,7 +39,7 @@ const Team = () => {
 					</div>
 
 					<div className="team-main-container">
-						<div className="title team-title">
+						<div className="title">
 							Curiosity-driven AI Systems Research.
 						</div>
 
@@ -49,15 +49,10 @@ const Team = () => {
 								alt="about"
 							/>
 						</div>
-
-                        <div className="team-head">
-                            Phd Students
-                        </div>
 						
-						<div className="team-container">
-							<div className="team-wrapper">
-                                <AllProfiles />
-							</div>
+						
+						<div className="team-wrapper">
+							<AllProfiles />
 						</div>
 					</div>
 					<hr />

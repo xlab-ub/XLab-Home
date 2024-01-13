@@ -57,7 +57,7 @@ const Homepage = () => {
 
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
-									<a href="/bio" style={{color: '#14b8a6'}}>About me</a>
+									<a href="/xlab-home/bio" style={{color: '#14b8a6'}}>About me</a>
 					
 								</div>
 
