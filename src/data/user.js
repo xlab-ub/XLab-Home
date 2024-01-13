@@ -52,7 +52,7 @@ const INFO = {
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "AI_algorithm.png",
 			linkText: "View Cases",
-			link: "https://github.com",
+			link: "/xlab-home/research#alg",
 		},
 
 		{
@@ -61,7 +61,7 @@ const INFO = {
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "AI_solutions.png",
 			linkText: "View Cases",
-			link: "https://github.com",
+			link: "/xlab-home/research#sol",
 		},
 
 		{
@@ -70,7 +70,7 @@ const INFO = {
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "AI_tools.png",
 			linkText: "View Cases",
-			link: "https://github.com",
+			link: "/xlab-home/research#sys",
 		},
 
 		{

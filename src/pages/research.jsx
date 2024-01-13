@@ -13,9 +13,9 @@ import SEO from "../data/seo";
 
 import "./styles/research.css";
 
+
 const Research = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "research");
@@ -52,15 +52,15 @@ const Research = () => {
 						</div>
 						<Row>
 							<Col span={20}>
-							<div id="part-1" className="section-container">
+							<div id="alg" className="section-container">
 								<div className="section-title">{ResearchINFO.main.section1.whole}</div>
 								<AllCases section='section1' />
 							</div>
-							<div id="part-2" className="section-container">
+							<div id="sol" className="section-container">
 								<div className="section-title">{ResearchINFO.main.section2.whole}</div>
 								<AllCases section='section1' />
 							</div>
-							<div id="part-3" className="section-container">
+							<div id="sys" className="section-container">
 								<div className="section-title">{ResearchINFO.main.section3.whole}</div>
 								<AllCases section='section1' />
 							</div>
@@ -69,18 +69,18 @@ const Research = () => {
 							<Anchor
 								items={[
 								{
-									key: 'part-1',
-									href: '#part-1',
+									key: 'alg',
+									href: '#alg',
 									title: 'AI Algorithms',
 								},
 								{
-									key: 'part-2',
-									href: '#part-2',
+									key: 'sol',
+									href: '#sol',
 									title: 'AI Solutions',
 								},
 								{
-									key: 'part-3',
-									href: '#part-3',
+									key: 'sys',
+									href: '#sys',
 									title: 'AI Systems',
 								},
 								]}

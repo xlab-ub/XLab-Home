@@ -22,11 +22,11 @@ const Toolbox = () => {
             bottom: 24
           }}
         >
-          <div style={{"margin-top": "10px"}}><Link to = "/search"><FloatButton icon={<SearchOutlined />} /></Link></div>
-          <div style={{"margin-top": "10px"}}><Link to = "/filter"><FloatButton icon={<FilterOutlined />} /></Link></div>
-          <div style={{"margin-top": "10px"}}><Link to = "/plot"><FloatButton icon={<BarChartOutlined />} /></Link></div>
+          <div style={{"margin-top": "10px"}}><Link to = "/xlab-home/search"><FloatButton icon={<SearchOutlined />} /></Link></div>
+          <div style={{"margin-top": "10px"}}><Link to = "/xlab-home/filter"><FloatButton icon={<FilterOutlined />} /></Link></div>
+          <div style={{"margin-top": "10px"}}><Link to = "/xlab-home/plot"><FloatButton icon={<BarChartOutlined />} /></Link></div>
           <div style={{"margin-top": "10px"}}><Link><FloatButton icon={<ToTopOutlined />} onClick={scrollToTop} /></Link></div>
-          <div style={{"margin-top": "10px"}}><Link to="/publications"><FloatButton icon={<RollbackOutlined />} /></Link></div>
+          <div style={{"margin-top": "10px"}}><Link to="/xlab-home/publications"><FloatButton icon={<RollbackOutlined />} /></Link></div>
         </FloatButton.Group>
       </div>
     );

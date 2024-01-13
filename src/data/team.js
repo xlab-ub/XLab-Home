@@ -45,7 +45,7 @@ const TeamINFO = {
 			start: "2023.09 ~ Present",
 			B_S: "",
 			M_S: "",
-			profile: ":Danchen-Liu.png",
+			profile: "Danchen-Liu.png",
 			link: "",
 		},
 	],
