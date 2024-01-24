@@ -1,6 +1,174 @@
 const LibraryINFO = {
 	Conferences: [
 		{
+			"date": "2024",
+			"source": "ASP-DAC",
+			"title": "QuadraNet: Improving High-Order Neural Interaction Efficiency with Hardware-Aware Quadratic Neural Networks",
+			"author": "C. Xu, F. Yu, Z. Xu, C. Liu, J. Xiong, and Xiang Chen",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "NeurIPS",
+			"title": "SyncTREE: Fast Timing Analysis for Integrated Circuit Design through a Physics-informed Tree-based Graph Neural Network",
+			"author": "Y. Hu, J. Li, F. Klemme, G. Nam, T. Ma, H. Amrouch, and J. Xiong",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "PACT",
+			"title": "Parallelizing Maximal Clique Enumeration on GPUs",
+			"author": "M. Almasri, Y. Chang, I. El Hajj, R. Nagi, J. Xiong, Wen-mei Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "ICCV",
+			"title": "Extensible and Efficient Proxy for Neural Architecture Search",
+			"author": "Y. Li, J. Li, C. Hao, P. Li, J. Xiong, D. Chen",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "ICPP",
+			"title": "BEEP: Balanced Efficient subgraph Enumeration in Parallel",
+			"author": "S. Kawtikwar, M. Almasri, W. Hwu, R. Nagi, J. Xiong",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "IC2S2",
+			"title": "A Moral- and Event-Centric Discovery of Gender Bias in Fairy Tales at A Large Scale",
+			"author": "Z. Zhou, J. Sun, J. Pei, N. Peng, Y. Wang, and J. Xiong",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "ACL",
+			"title": "Can Language Models Be Specific? How?",
+			"author": "J. Huang, K. Chang, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "WWW",
+			"title": "CAM: A Large Language Model-based Creative Analogy Mining Framework",
+			"author": "B. Bhavya, J. Xiong, and C. Zhai",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2023",
+			"source": "ASPLOS",
+			"title": "GPU-Orchestrated On-Demand High-Throughput Storage Access in the Panda System Architecture",
+			"author": "Z. Qureshi, V. Mailthody, I. Gelado, S. Min, A. Masood, J. Park, J. Xiong, CJ Newburn, D. Vainbrand, I. Chung, M. Garland, W. Dally, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "EMNLP",
+			"title": "Understanding Jargon: Combining Extraction and Generation for Definition Modeling",
+			"author": "J. Huang, H. Shao, K. Chang, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "EMNLP",
+			"title": "DEER: A Descriptive Graph for Explaining Entity Relationships",
+			"author": "J. Huang, K. Zhu, K. Chang, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "MLSys",
+			"title": "QuadraLib: A Performant Quadratic Neural Network Library for Architecture Optimization and Design Exploration",
+			"author": "Z. Xu, F. Yu, J. Xiong, and X. Chen",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "KDD",
+			"title": "Graph Neural Network Training and Data Tiering",
+			"author": "S. Min, K. Wu, M. Hidayetoglu, J. Xiong, X. Song, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "KDD",
+			"title": "Contrastive Learning with Complex Heterogeneity",
+			"author": "L. Zheng, J. Xiong, Y. Zhu, and J. He",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "NLG",
+			"title": "Analogy Generation by Prompting Large Language Models: A Case Study of InstructGPT",
+			"author": "B. Bhayva, J. Xiong, and C. Zhai",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "NAACL",
+			"title": "A Word is Worth A Thousand Dollars: Adversarial Attack on Tweets Fools Stock Prediction",
+			"author": "Y. Xie, D. Wang, P. Chen, J. Xiong, S. Liu, O. Koyejo",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "ICML",
+			"title": "Generalization Guarantee of Training Graph Convolutional Networks with Graph Topology Sampling",
+			"author": "H. Li, M. Wang, S. Liu, P. Chen, and J. Xiong",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "ICS'22",
+			"title": "Parallel K-Clique Counting on GPUs",
+			"author": "M. Almasri, I. Hajj, R. Nagi, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "IPDPS",
+			"title": "PARSEC: PARallel Subgraph Enumeration in CUDA",
+			"author": "V. Dodeja, M. Almasri, Rakesh Nagi, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "ACL'22",
+			"title": "Open Relation Modeling: Learning to Define Relations between Entities",
+			"author": "J. Huang, K. Chang, J. Xiong, and W. Hwu",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
+			"date": "2022",
+			"source": "ICLR",
+			"title": "How Unlabeled Data Improve Generalization in Self-training? A One-Hidden-Layer Theoretical Analysis",
+			"author": "S. Zhang, M. Wang, S. Liu, P. Chen, and J. Xiong",
+			"paper_link": "",
+			"code_link": ""
+		},
+		{
 			"date": "2022",
 			"source": "ASP-DAC",
 			"title": "HiKonv: High Throughput Quantized Convolution With Novel Bit-wise Management And Computation",
@@ -1263,6 +1431,12 @@ const LibraryINFO = {
 	Patents: [
 		{
 			"date": "2021",
+			"title": "Neural Energy Saver: Model-Agnostic Input Transformation Learning for Adjusting Accuracy-Energy Tradeoff in Neural Networks",
+			"author": "P. Chen, N. Chandramoorthy, K. Swaminathan, J. Xiong, D. Shah, and B. Li",
+			"id": "P202102795"
+		},
+		{
+			"date": "2021",
 			"title": "Global Prosody Style Transfer Without Text Transcriptions",
 			"author": "K. Qian, Y. Zhang, S. Chang, J. Xiong, C. Gan, and D. Cox",
 			"id": "P202102159US01"
@@ -1552,10 +1726,10 @@ const LibraryINFO = {
 	],
 	Bookchapters: [
 		{
-			"date": "2000",
-			"author": "J. Xiong",
-			"title": "Mastering Flash 4 Illustrated in Chinese",
-			"publish": "China Electricity Power Press, Beijing, China, ISBN: 7-5083-0303-2, 2000."
+			"date": "2023",
+			"author": "J.Wu, J. Xiong and Y. Shi",
+			"title": "On improving the reliability of power grids for multiple power line outages and anomaly detection",
+			"publish": "Chapter in System Dependability and Analytics - Approaching System Dependability from Data, System and Analytics Perspectives, Springer Nature, in Press. ISBN: 978-3-031-02063-6."
 		},
 		{
 			"date": "2019",
@@ -1574,9 +1748,23 @@ const LibraryINFO = {
 			"author": "Y. Shi, J. Xiong, and L. He",
 			"title": "Stochastic Optimization over Correlated Dataset",
 			"publish": "Chapter in Stochastic Optimization, Theory and Applications, Intech publishing, ISBN: 978-953-307-829-8, 2011."
+		},
+		{
+			"date": "2000",
+			"author": "J. Xiong",
+			"title": "Mastering Flash 4 Illustrated in Chinese",
+			"publish": "China Electricity Power Press, Beijing, China, ISBN: 7-5083-0303-2, 2000."
 		}
 	],
 	Journals: [
+		{
+			"date": "2022",
+			"source": "IEEE Transactions on Computers",
+			"title": "VisualNet: An End-to-End Human Visual System Inspired Framework to Reduce Inference Latency of Deep Neural Networks",
+			"author": "T. Wang, J. Zhang, J. Xiong, S. Bian, Z. Yan, M. Huang, J. Zhuang, T. Sato, X. Xu, and Y. Shi",
+			"paper_link": "",
+			"code_link": ""
+		},
 		{
 			"date": "2021",
 			"source": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
@@ -1899,6 +2087,14 @@ const LibraryINFO = {
 		}
 	],
 	Workshops: [
+		{
+			"author": "H. Li, M. Wang, S. Liu, P. Chen, J. Xiong",
+			"date": "2023",
+			"source": "The Eleventh International Conference on Learning Representations (ICLR) Workshop on Sparsity in Neural Networks",
+			"title": "Generalization Guarantee of Training Graph Convolutional Networks with Graph Topology Sampling",
+			"paper_link": "",
+			"code_link": ""
+		},
 		{
 			"author": "J. Li, B. Cheng, R. Feris, J. Xiong, T. Huang, W. Hwu, and H. Shi",
 			"date": "2021",

@@ -177,7 +177,7 @@ const Publications = () => {
 										</div>
 									</Col>
 									<Col span={4}>
-									<div className="statis"><Statistic title="Total Contributions" value={317} formatter={formatter} /></div>
+									<div className="statis"><Statistic title="Total Contributions" value={342} formatter={formatter} /></div>
 									<Anchor
 										items={[
 											{
