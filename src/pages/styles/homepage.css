@@ -8,16 +8,17 @@
 }
 
 .homepage-logo {
-    width: 80px;
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 3vh;
-	z-index: 999;
-	margin-left: 2%;
+    width: 80px;                   
+    display: flex;
+    position: fixed;                
+    border: 1px solid white;
+    border-radius: 50%;             
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 2vh;                       
+    left: 20px;                      
+    z-index: 999;                    
 }
+
 
 .homepage-container {
 	padding-top: 0px;
@@ -71,7 +72,8 @@
 }
 
 .homepage-social-icon {
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 25px;
 	transition: color 0.2s ease-in-out;
 	color: var(--secondary-color);
@@ -122,7 +124,7 @@
 
 	.homepage-first-area-left-side {
 		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
+		flex-direction: column;
 		align-items: flex-start;
 		width: 100%;
 		order: 2;
@@ -132,6 +134,7 @@
 		width: 100% !important;
 		margin-top: 20px;
 		order: 2;
+		font-size: clamp(30px, 2vw, 100px) !important;
 	}
 
 	.homepage-subtitle {
@@ -149,15 +152,15 @@
 	}
 
 	.homepage-first-area-right-side {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 		order: 1;
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
 		order: 1;
+		max-width: 20%;
 	}
 
 	.homepage-after-title {
@@ -171,4 +174,17 @@
 	.more {
 		color: #14b8a6;
 	}
+	.homepage-socials{
+		align-self: center;
+	}
+	.homepage-recruit{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+.homepage-image-container {
+	max-width: 150px;
+}
 }

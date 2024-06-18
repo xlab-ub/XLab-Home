@@ -79,7 +79,7 @@ const Research = () => {
 							</div>
 							</Col>
 							<Col span={4}>
-							<Anchor
+							<Anchor className="responsive-anchor"
 								items={[
 								{
 									key: 'alg',

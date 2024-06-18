@@ -1,74 +1,156 @@
-@import "../../../data/styles.css";
+/* General styling for the navbar container */
+.menu-toggle {
+    display: block; /* Show toggle button */
+    position: absolute;
+    left: 10%; /* Center horizontally */
+    top: 10px; /* Position from the top */
+    transform: translateX(-50%); /* Adjust for the button's width to truly center it */
+    z-index: 1000; /* Ensure it is above other elements */
+    background: #fff; /* Background color for visibility */
+    border: none; /* No border for a cleaner look */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 5px 10px; /* Padding for better touch area */
+    border-radius: 5px; /* Rounded corners for the button */
+    line-height: 35px;
+}
+
+.nav-background.open .menu-toggle {
+    top: -50px; /* Move toggle button up when menu is open */
+}
+
+.nav-background.open {
+    height: auto; /* Height auto to fit expanded content */
+    padding-top: 60px; /* Add padding to compensate for moved toggle button */
+}
 
 .nav-container {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Styling for the navbar itself */
 .navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	top: 4vh;
-	z-index: 999;
+	transition: top 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 4vh;
+    z-index: 999;
+    width: 80%;
 }
 
+.navbar.hidden {
+    top: -100px; /* Adjust according to the height of your navbar */
+}
+
+/* Styling for the navbar background, including box-shadow and rounded corners */
 .nav-background {
-	width: 800px;
-	height: 50px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background: #fff;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-	border-radius: 40px;
+    width: 800px;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    overflow: hidden; /* Ensures contents stay within the rounded borders */
+    transition: all 0.3s ease-in-out; /* Smooth transition for expanding */
 }
 
+/* Styling for the navigation list */
 .nav-list {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	align-items: center;
-	/* margin-left: 20px; */
-	margin-right: 20px;
-	margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-top: 11px;
+    width: 100%; /* Full width to accommodate spacing */
 }
 
+/* Styling for individual navigation items */
 .nav-item {
-	font-weight: bold;
-	font-size: 80%;
+    font-weight: bold;
+    font-size: 80%;
 }
 
+/* Active state styling for nav items */
 .nav-item.active a {
-	color: var(--link-color) !important;
+    color: var(--link-color) !important;
 }
 
+/* Link styling within navigation items */
 .nav-item a {
-	text-decoration: none;
-	color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
+/* Hover effect for navigation links */
 .nav-item a:hover {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
+/* Responsive adjustments for devices with max width of 800px */
+@media (max-width: 800px) {
+    .navbar {
+        position: fixed;
+        top: 2vh;
+        left: 0; /* Align left to the screen edge */
+        right: 0; /* Align right to the screen edge */
+        width: 100%; /* Full width for mobile devices */
+        justify-content: center; /* Center navbar within the view */
+        align-items: center; /* Vertically center contents of navbar */
+    }
 
-	.nav-background {
-		width: 80%;
-		height: 40px;
-	}
+    .menu-toggle {
+        display: block; /* Show toggle button */
+        position: absolute;
+        left: 50%; /* Center horizontally */
+        top: 10px; /* Position from the top */
+        transform: translateX(-50%); /* Adjust for the button's width to truly center it */
+        z-index: 1000; /* Ensure it is above other elements */
+        background: #fff; /* Background color for visibility */
+        border: none; /* No border for a cleaner look */
+        cursor: pointer; /* Pointer cursor on hover */
+        padding: 5px 10px; /* Padding for better touch area */
+        border-radius: 5px; /* Rounded corners for the button */
+    }
 
-	.nav-item {
-		font-weight: bold;
-	}
+    .nav-background.open {
+        height: auto; /* Height auto to fit expanded content */
+        border-radius: 0; /* No rounded corners when expanded */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-background.open .nav-list {
+        display: flex;
+    }
+}
+
+/* Adjustments for desktop screens in navbar styles */
+@media (min-width: 800px) {
+    .menu-toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+
+    .nav-list {
+        display: flex; /* Always show the navigation list on larger screens */
+    }
+
+    .nav-background {
+        height: 50px !important; /* Adjust height to be more compact */
+        padding-top: 2px !important; /* Remove additional padding at the top */
+        align-items: center; /* Ensure items are vertically centered */
+
+    }
+
+    .navbar {
+        height: auto; /* Adjust the navbar height automatically */
+    }
 }

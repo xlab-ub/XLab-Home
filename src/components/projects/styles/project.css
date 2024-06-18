@@ -67,8 +67,11 @@
 	font-weight: 700;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
 	.project {
 		height: 300px;
+	}
+	.project-description{
+		font-size: clamp(8px, 2vw, 15px)
 	}
 }

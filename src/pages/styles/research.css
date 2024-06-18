@@ -9,15 +9,15 @@ a {
 }
 
 .research-logo {
-    width: 80px;
+	width: 80px;                   
 	display: flex;
-	position: fixed;
+	position: fixed;                
 	border: 1px solid white;
-	border-radius: 50%;
+	border-radius: 50%;             
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 3vh;
-	z-index: 999;
-	margin-left: 2%;
+    top: 2vh;                       
+	left: 20px;                      
+	z-index: 999;                    
 }
 
 .research-img {
@@ -67,12 +67,15 @@ a {
 
 @media (max-width: 1024px) {
 	.research-logo {
-		z-index: 100;
+		z-index: 1000;
 	}	
 }
 
 @media (max-width: 600px) {
 	.research-container {
 		padding-top: 60px;
+	}
+	.responsive-anchor {
+        display: none;     
 	}
 }

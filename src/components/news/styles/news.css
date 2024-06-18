@@ -41,6 +41,7 @@ a {
 
 .homepage-new-description {
     padding-left: 50px;
+	padding-right: 20px;
 	opacity: 1;
 	color: var(--secondary-color);
 	font-size: 16px;
