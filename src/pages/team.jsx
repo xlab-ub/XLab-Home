@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from 'react-router-dom';
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -23,15 +24,14 @@ const Team = () => {
 			<Helmet>
 				<title>{`Team | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
-
 			<div className="page-content">
 				<NavBar active="team" />
 				<div className="content-wrapper">
+					<div className="login-button">
+						<Link to="/xlab-home/team/login" className="login-link">Login</Link>
+					</div>
 					<div className="team-logo-container">
 						<div className="team-logo">
 							<Logo width={80} />
@@ -44,12 +44,8 @@ const Team = () => {
 						</div>
 
 						<div className="team-img">
-							<img
-								src="banner.jpg"
-								alt="about"
-							/>
+							<img src="banner.jpg" alt="about" />
 						</div>
-						
 						
 						<div className="team-wrapper">
 							<AllProfiles />

@@ -11,7 +11,8 @@ import Bio from "./pages/bio";
 import Opensource from "./pages/opensource";
 import Events from "./pages/events";
 import Blog from "./pages/blog";
-import SearchComponent from './components/publications/actions.jsx'
+import Login from "./pages/login";
+import SearchComponent from './components/publications/actions.jsx';
 import PlotComponent from "./components/publications/plot";
 import FilterComponent from "./components/publications/filter";
 
@@ -34,6 +35,7 @@ function App() {
 				<Route path="/xlab-home/filter" element={<FilterComponent />} />
 				<Route path="/xlab-home/publications" element={<Publications />} />
 				<Route path="/xlab-home/opensource" element={<Opensource />} />
+				<Route path="/xlab-home/team/login" element={<Login/>} />
 			</Routes>
 		</div>
 	);

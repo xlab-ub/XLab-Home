@@ -33,7 +33,7 @@ const TeamINFO = {
 			link: "",
 		},
 		{
-			name: "Danchen Liu",
+			name: "Dancheng Liu",
 			start: "2023.09 ~ Present",
 			B_S: "UC San Diego",
 			M_S: "UC San Diego",
