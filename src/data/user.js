@@ -104,7 +104,7 @@ const INFO = {
 		{
 			date: "27 June 2023",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Lorem ipsum dolor sit amet Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			link: "https://github.com",
 		},
 
